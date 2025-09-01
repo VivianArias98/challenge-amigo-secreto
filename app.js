@@ -11,5 +11,13 @@ function agregarAmigo() {
     }else {
     amigos.push(nombreAmigo);
 
-    console.log(amigos);}
+    console.log(amigos);
+    limpiarCaja();
+}
+ return;   
+}
+
+function limpiarCaja() {
+    document.querySelector('#amigo').value = '';
+    
 }
