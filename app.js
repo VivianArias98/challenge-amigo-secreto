@@ -13,11 +13,22 @@ function agregarAmigo() {
 
     console.log(amigos);
     limpiarCaja();
+    mostrarLista();            
 }
  return;   
 }
 
 function limpiarCaja() {
     document.querySelector('#amigo').value = '';
+    
+}
+
+function mostrarLista() {
+    let lista = document.getElementById("listaAmigos");
+    lista.innerHTML = ""; 
+
+    for (let i = 0; i < amigos.length; i++) {
+        lista.innerHTML += "<li>" + amigos[i] + "</li>";
+    }
     
 }
